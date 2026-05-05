@@ -1,0 +1,30 @@
+{
+    "versions": [
+        {
+            "package_version": "1.1.2",
+            "download_url": "https://github.com/ZobeePlays/TTYD-Randomizer-AP-Tracker/releases/download/1.1.2/TTYD-AP-1.1.2.zip",
+            "sha256": "e7580831d6f1e6364f2c639bcd78c4826cfa942bb82bca7a04f78e2125dde07a",
+            "changelog": [
+                "Logic Fixes",
+                "Backend tweaks to ensure backwards compatibility"
+            ]
+        },
+      {
+            "package_version": "1.1.1",
+            "download_url": "https://github.com/ZobeePlays/TTYD-Randomizer-AP-Tracker/releases/download/1.1.1/TTYD-AP-1.1.1.zip",
+            "sha256": "33dee23b3b3a6402e6ce4c36fa961b765e163dbfeac46dec9f888fa558ac0cdf",
+            "changelog": [
+                "Tattlesanity Logic fixes",
+                "File Optimizations"
+            ]
+        },
+      {
+            "package_version": "1.1.0",
+            "download_url": "https://github.com/ZobeePlays/TTYD-Randomizer-AP-Tracker/releases/download/1.1.0/TTYD-AP-1.1.0.zip",
+            "sha256": "1e38134f4022a322678b3582e7f7f84e3e4f06d8a8e2053376b03bcf971b2411",
+            "changelog": [
+                "Initial Release"
+            ]
+        }
+    ]
+}

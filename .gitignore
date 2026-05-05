@@ -1,0 +1,23 @@
+# Packaged Releases (Don't track the zips you plan to distribute)
+*.zip
+*.pop
+*.rar
+*.7z
+*.tar.gz
+
+# OS Generated Files (Keeps Mac/Windows background files out)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDEs and Text Editors (Keeps your personal VS Code settings out)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

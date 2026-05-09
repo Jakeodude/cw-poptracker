@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Hats",
+        "children": [
+            {
+                "name": "Hat Purchases",
+                "sections": [
+                    {"name": "Bought Beanie", "item_count": 1},
+                    {"name": "Bought Bucket Hat", "item_count": 1},
+                    {"name": "Bought Floppy Hat", "item_count": 1},
+                    {"name": "Bought Homburg", "item_count": 1},
+                    {"name": "Bought Bowler Hat", "item_count": 1},
+                    {"name": "Bought Cap", "item_count": 1},
+                    {"name": "Bought News Cap", "item_count": 1},
+                    {"name": "Bought Sports Helmet", "item_count": 1},
+                    {"name": "Bought Hard Hat", "item_count": 1},
+                    {"name": "Bought Chefs Hat", "item_count": 1},
+                    {"name": "Bought Propeller Hat", "item_count": 1},
+                    {"name": "Bought Cowboy Hat", "item_count": 1},
+                    {"name": "Bought Horns", "item_count": 1},
+                    {"name": "Bought Hotdog Hat", "item_count": 1},
+                    {"name": "Bought Milk Hat", "item_count": 1},
+                    {"name": "Bought Pirate Hat", "item_count": 1},
+                    {"name": "Bought Top Hat", "item_count": 1},
+                    {"name": "Bought Party Hat", "item_count": 1},
+                    {"name": "Bought Ushanka", "item_count": 1},
+                    {"name": "Bought Balaclava", "item_count": 1},
+                    {"name": "Bought Cat Ears", "item_count": 1},
+                    {"name": "Bought Curly Hair", "item_count": 1},
+                    {"name": "Bought Clown Hair", "item_count": 1},
+                    {"name": "Bought Crown", "item_count": 1},
+                    {"name": "Bought Halo", "item_count": 1},
+                    {"name": "Bought Jesters Hat", "item_count": 1},
+                    {"name": "Bought Ghost Hat", "item_count": 1},
+                    {"name": "Bought Tooop Hat", "item_count": 1},
+                    {"name": "Bought Shroom Hat", "item_count": 1},
+                    {"name": "Bought Witch Hat", "item_count": 1},
+                    {"name": "Bought Savannah Hair", "item_count": 1}
+                ]
+            }
+        ]
+    }
+]

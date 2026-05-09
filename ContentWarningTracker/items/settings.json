@@ -1,0 +1,342 @@
+[
+    {
+        "name": "== GOAL TOGGLES ==",
+        "type": "static",
+        "img": "images/items/section_header.png",
+        "codes": "SectionHeaderGoals"
+    },
+    {
+        "name": "Viral Sensation Goal",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Viral Sensation: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingViralSensationOff,SettingViralSensation",
+                "inherit_codes": false
+            },
+            {
+                "name": "Viral Sensation: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingViralSensationOn,SettingViralSensation",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Views Goal",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Views Goal: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingViewsGoalOff,SettingViewsGoal",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Goal: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingViewsGoalOn,SettingViewsGoal",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Quota Goal",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Quota Goal: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingQuotaGoalOff,SettingQuotaGoal",
+                "inherit_codes": false
+            },
+            {
+                "name": "Quota Goal: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingQuotaGoalOn,SettingQuotaGoal",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Monster Hunter Goal",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Monster Hunter: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingMonsterHunterOff,SettingMonsterHunter",
+                "inherit_codes": false
+            },
+            {
+                "name": "Monster Hunter: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingMonsterHunterOn,SettingMonsterHunter",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hat Collector Goal",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Hat Collector: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingHatCollectorOff,SettingHatCollector",
+                "inherit_codes": false
+            },
+            {
+                "name": "Hat Collector: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingHatCollectorOn,SettingHatCollector",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "== GOAL TARGETS (set from slot data) ==",
+        "type": "static",
+        "img": "images/items/section_header.png",
+        "codes": "SectionHeaderTargets"
+    },
+    {
+        "name": "Views Goal Target",
+        "type": "consumable",
+        "max_quantity": 33739000,
+        "img": "images/items/goal_views_target.png",
+        "codes": "GoalViewsTarget"
+    },
+    {
+        "name": "Quota Count",
+        "type": "consumable",
+        "max_quantity": 21,
+        "img": "images/items/goal_quota_count.png",
+        "codes": "GoalQuotaCount"
+    },
+    {
+        "name": "Monster Hunter Count",
+        "type": "consumable",
+        "max_quantity": 33,
+        "img": "images/items/goal_monster_count.png",
+        "codes": "GoalMonsterCount"
+    },
+    {
+        "name": "Hat Collector Count",
+        "type": "consumable",
+        "max_quantity": 31,
+        "img": "images/items/goal_hat_count.png",
+        "codes": "GoalHatCount"
+    },
+    {
+        "name": "== LIVE PROGRESS ==",
+        "type": "static",
+        "img": "images/items/section_header.png",
+        "codes": "SectionHeaderProgress"
+    },
+    {
+        "name": "Monsters Filmed",
+        "type": "consumable",
+        "max_quantity": 30,
+        "img": "images/items/progress_monsters.png",
+        "codes": "ProgressMonsters"
+    },
+    {
+        "name": "Hats Bought",
+        "type": "consumable",
+        "max_quantity": 31,
+        "img": "images/items/progress_hats.png",
+        "codes": "ProgressHats"
+    },
+    {
+        "name": "Quotas Completed",
+        "type": "consumable",
+        "max_quantity": 21,
+        "img": "images/items/progress_quotas.png",
+        "codes": "ProgressQuotas"
+    },
+    {
+        "name": "View Milestones Checked",
+        "type": "consumable",
+        "max_quantity": 63,
+        "img": "images/items/progress_views.png",
+        "codes": "ProgressViews"
+    },
+    {
+        "name": "== OPTION SETTINGS ==",
+        "type": "static",
+        "img": "images/items/section_header.png",
+        "codes": "SectionHeaderOptions"
+    },
+    {
+        "name": "Views Checks",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Views Checks: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingViewsChecksOff,SettingViewsChecks",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Checks: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingViewsChecksOn,SettingViewsChecks",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Quota Requirement",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Quota Requirement: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingQuotaReqOff,SettingQuotaReq",
+                "inherit_codes": false
+            },
+            {
+                "name": "Quota Requirement: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingQuotaReqOn,SettingQuotaReq",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Monster Tiers",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Monster Tiers: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingMonsterTiersOff,SettingMonsterTiers",
+                "inherit_codes": false
+            },
+            {
+                "name": "Monster Tiers: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingMonsterTiersOn,SettingMonsterTiers",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Difficult Monsters",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Difficult Monsters: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingDifficultMonstersOff,SettingDifficultMonsters",
+                "inherit_codes": false
+            },
+            {
+                "name": "Difficult Monsters: ON (have real items)",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingDifficultMonstersOn,SettingDifficultMonsters",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Multiplayer Mode",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Multiplayer Mode: OFF (Solo)",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingMultiplayerOff,SettingMultiplayer",
+                "inherit_codes": false
+            },
+            {
+                "name": "Multiplayer Mode: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingMultiplayerOn,SettingMultiplayer",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Include Sponsorships",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Include Sponsorships: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingIncludeSponsorshipsOff,SettingIncludeSponsorships",
+                "inherit_codes": false
+            },
+            {
+                "name": "Include Sponsorships: ON",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingIncludeSponsorshipsOn,SettingIncludeSponsorships",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Sponsor Filler",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Sponsor Filler: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingSponsorFillerOff,SettingSponsorFiller",
+                "inherit_codes": false
+            },
+            {
+                "name": "Sponsor Filler: ON (sponsors give filler only)",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingSponsorFillerOn,SettingSponsorFiller",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Filler Multi-Sightings",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Filler Multi-Sightings: OFF",
+                "img": "images/items/setting_off.png",
+                "codes": "SettingFillerMultiSightingsOff,SettingFillerMultiSightings",
+                "inherit_codes": false
+            },
+            {
+                "name": "Filler Multi-Sightings: ON (tiers 2/3 are filler only)",
+                "img": "images/items/setting_on.png",
+                "codes": "SettingFillerMultiSightingsOn,SettingFillerMultiSightings",
+                "inherit_codes": false
+            }
+        ]
+    }
+]

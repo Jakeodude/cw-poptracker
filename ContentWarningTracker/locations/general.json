@@ -1,0 +1,159 @@
+[
+    {
+        "name": "General",
+        "children": [
+            {
+                "name": "Other",
+                "sections": [
+                    {"name": "Any Extraction", "item_count": 1},
+                    {"name": "Viral Sensation Achieved", "item_count": 1, "visibility_rules": ["SettingViralSensationOn"]}
+                ]
+            },
+            {
+                "name": "Artifacts",
+                "sections": [
+                    {"name": "Filmed Ribcage", "item_count": 1},
+                    {"name": "Filmed Skull", "item_count": 1},
+                    {"name": "Filmed Spine", "item_count": 1},
+                    {"name": "Filmed Bone", "item_count": 1},
+                    {"name": "Filmed Apple", "item_count": 1},
+                    {"name": "Filmed Brain on a Stick", "item_count": 1},
+                    {"name": "Filmed Radio", "item_count": 1},
+                    {"name": "Filmed Shroom", "item_count": 1},
+                    {"name": "Filmed Animal Statues", "item_count": 1},
+                    {"name": "Filmed Radioactive Container", "item_count": 1},
+                    {"name": "Filmed Old Painting", "item_count": 1},
+                    {"name": "Filmed Chorby", "item_count": 1},
+                    {"name": "Filmed Reporter Mic", "item_count": 1}
+                ]
+            },
+            {
+                "name": "Artifact Tiers",
+                "visibility_rules": ["SettingMonsterTiersOn"],
+                "sections": [
+                    {"name": "Filmed Ribcage 2", "item_count": 1},
+                    {"name": "Filmed Skull 2", "item_count": 1},
+                    {"name": "Filmed Spine 2", "item_count": 1},
+                    {"name": "Filmed Bone 2", "item_count": 1},
+                    {"name": "Filmed Brain on a Stick 2", "item_count": 1},
+                    {"name": "Filmed Radio 2", "item_count": 1},
+                    {"name": "Filmed Shroom 2", "item_count": 1},
+                    {"name": "Filmed Animal Statues 2", "item_count": 1},
+                    {"name": "Filmed Radioactive Container 2", "item_count": 1},
+                    {"name": "Filmed Old Painting 2", "item_count": 1},
+                    {"name": "Filmed Chorby 2", "item_count": 1},
+                    {"name": "Filmed Apple 2", "item_count": 1},
+                    {"name": "Filmed Reporter Mic 2", "item_count": 1},
+                    {"name": "Filmed Ribcage 3", "item_count": 1},
+                    {"name": "Filmed Skull 3", "item_count": 1},
+                    {"name": "Filmed Spine 3", "item_count": 1},
+                    {"name": "Filmed Bone 3", "item_count": 1},
+                    {"name": "Filmed Brain on a Stick 3", "item_count": 1},
+                    {"name": "Filmed Radio 3", "item_count": 1},
+                    {"name": "Filmed Shroom 3", "item_count": 1},
+                    {"name": "Filmed Animal Statues 3", "item_count": 1},
+                    {"name": "Filmed Radioactive Container 3", "item_count": 1},
+                    {"name": "Filmed Old Painting 3", "item_count": 1},
+                    {"name": "Filmed Chorby 3", "item_count": 1},
+                    {"name": "Filmed Apple 3", "item_count": 1},
+                    {"name": "Filmed Reporter Mic 3", "item_count": 1}
+                ]
+            },
+            {
+                "name": "Store Purchases",
+                "sections": [
+                    {"name": "Bought Old Flashlight", "item_count": 1},
+                    {"name": "Bought Flare", "item_count": 1},
+                    {"name": "Bought Reporter Mic", "item_count": 1},
+                    {"name": "Bought Boom Mic", "item_count": 1},
+                    {"name": "Bought Clapper", "item_count": 1},
+                    {"name": "Bought Sound Player", "item_count": 1},
+                    {"name": "Bought Goo Ball", "item_count": 1},
+                    {"name": "Bought Party Popper", "item_count": 1},
+                    {"name": "Bought Modern Flashlight", "item_count": 1},
+                    {"name": "Bought Long Flashlight", "item_count": 1},
+                    {"name": "Bought Hugger", "item_count": 1},
+                    {"name": "Bought Rescue Hook", "item_count": 1},
+                    {"name": "Bought Sketch Pad", "item_count": 1},
+                    {"name": "Bought Modern Flashlight Pro", "item_count": 1},
+                    {"name": "Bought Long Flashlight Pro", "item_count": 1},
+                    {"name": "Bought Defibrillator", "item_count": 1},
+                    {"name": "Bought Shock Stick", "item_count": 1}
+                ]
+            },
+            {
+                "name": "Emotes",
+                "sections": [
+                    {"name": "Bought Applause", "item_count": 1},
+                    {"name": "Bought Workout 1", "item_count": 1},
+                    {"name": "Bought Confused", "item_count": 1},
+                    {"name": "Bought Dance 103", "item_count": 1},
+                    {"name": "Bought Caring", "item_count": 1},
+                    {"name": "Bought Ancient Gestures 3", "item_count": 1},
+                    {"name": "Bought Ancient Gestures 2", "item_count": 1},
+                    {"name": "Bought Dance 102", "item_count": 1},
+                    {"name": "Bought Dance 101", "item_count": 1},
+                    {"name": "Bought Backflip", "item_count": 1},
+                    {"name": "Bought Yoga", "item_count": 1},
+                    {"name": "Bought Workout 2", "item_count": 1},
+                    {"name": "Bought Gymnastics", "item_count": 1},
+                    {"name": "Bought Thumbnail 1", "item_count": 1},
+                    {"name": "Bought Thumbnail 2", "item_count": 1},
+                    {"name": "Bought Ancient Gestures 1", "item_count": 1}
+                ]
+            },
+            {
+                "name": "Sponsorships",
+                "visibility_rules": ["SettingIncludeSponsorshipsOn"],
+                "sections": [
+                    {"name": "Completed Sponsorship 1", "item_count": 1},
+                    {"name": "Completed Sponsorship 2", "item_count": 1},
+                    {"name": "Completed Sponsorship 3", "item_count": 1},
+                    {"name": "Completed Sponsorship 4", "item_count": 1},
+                    {"name": "Completed Sponsorship 5", "item_count": 1},
+                    {"name": "Completed Sponsorship 6", "item_count": 1},
+                    {"name": "Completed Sponsorship 7", "item_count": 1},
+                    {"name": "Completed Sponsorship 8", "item_count": 1},
+                    {"name": "Completed Sponsorship 9", "item_count": 1},
+                    {"name": "Completed Sponsorship 10", "item_count": 1},
+                    {"name": "Completed Sponsorship 11", "item_count": 1},
+                    {"name": "Completed Sponsorship 12", "item_count": 1},
+                    {"name": "Completed Sponsorship 13", "item_count": 1},
+                    {"name": "Completed Sponsorship 14", "item_count": 1},
+                    {"name": "Completed Sponsorship 15", "item_count": 1},
+                    {"name": "Completed Sponsorship 16", "item_count": 1},
+                    {"name": "Completed Sponsorship 17", "item_count": 1},
+                    {"name": "Completed Sponsorship 18", "item_count": 1},
+                    {"name": "Completed Sponsorship 19", "item_count": 1},
+                    {"name": "Completed Sponsorship 20", "item_count": 1}
+                ]
+            },
+            {
+                "name": "Found Chorby",
+                "sections": [
+                    {"name": "Found Chorby 1", "item_count": 1},
+                    {"name": "Found Chorby 2", "item_count": 1},
+                    {"name": "Found Chorby 3", "item_count": 1},
+                    {"name": "Found Chorby 4", "item_count": 1},
+                    {"name": "Found Chorby 5", "item_count": 1},
+                    {"name": "Found Chorby 6", "item_count": 1},
+                    {"name": "Found Chorby 7", "item_count": 1},
+                    {"name": "Found Chorby 8", "item_count": 1},
+                    {"name": "Found Chorby 9", "item_count": 1},
+                    {"name": "Found Chorby 10", "item_count": 1},
+                    {"name": "Found Chorby 11", "item_count": 1},
+                    {"name": "Found Chorby 12", "item_count": 1},
+                    {"name": "Found Chorby 13", "item_count": 1},
+                    {"name": "Found Chorby 14", "item_count": 1},
+                    {"name": "Found Chorby 15", "item_count": 1},
+                    {"name": "Found Chorby 16", "item_count": 1},
+                    {"name": "Found Chorby 17", "item_count": 1},
+                    {"name": "Found Chorby 18", "item_count": 1},
+                    {"name": "Found Chorby 19", "item_count": 1},
+                    {"name": "Found Chorby 20", "item_count": 1},
+                    {"name": "Found Chorby 21", "item_count": 1}
+                ]
+            }
+        ]
+    }
+]

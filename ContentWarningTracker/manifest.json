@@ -1,0 +1,37 @@
+{
+    "name": "Content Warning AP Tracker",
+    "game_name": "Content Warning",
+    "package_version": "0.1.0",
+    "package_uid": "content_warning_ap",
+    "author": "Jakeodude",
+    "variants": {
+        "Standard": {
+            "display_name": "Standard",
+            "flags": ["ap"],
+            "items": [
+                "items/items.json",
+                "items/settings.json",
+                "items/locationobjects.json"
+            ],
+            "locations": [
+                "locations/monsters.json",
+                "locations/hats.json",
+                "locations/general.json",
+                "locations/days_quotas.json",
+                "locations/views.json"
+            ],
+            "maps": [
+                "maps/maps.json"
+            ],
+            "layouts": [
+                "layouts/items.json",
+                "layouts/tracker.json",
+                "layouts/broadcast.json"
+            ],
+            "scripts": [
+                "scripts/init.lua"
+            ]
+        }
+    },
+    "min_poptracker_version": "0.32.1"
+}

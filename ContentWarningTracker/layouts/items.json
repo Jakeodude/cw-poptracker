@@ -1,0 +1,168 @@
+{
+    "cw_key_items_grid": {
+        "type": "itemgrid",
+        "item_margin": "4,4",
+        "item_width": 44,
+        "item_height": 44,
+        "rows": [
+            ["ProgCamera", "ProgOxygen", "ProgViews", "ProgStamina", "ProgStaminaRegen"],
+            ["DivingBellO2", "DivingBellCharger", "F", "MonsterSpawnTrap", "RagdollTrap"]
+        ]
+    },
+
+    "cw_money_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 40,
+        "item_height": 40,
+        "rows": [
+            ["Money50", "Money100", "Money200", "Money300", "Money400"],
+            ["MetaCoins500", "MetaCoins1000", "MetaCoins1500", "MetaCoins2000", "F"]
+        ]
+    },
+
+    "cw_hats_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 36,
+        "item_height": 36,
+        "rows": [
+            ["loc_bought_beanie",      "loc_bought_bucket_hat",  "loc_bought_floppy_hat",   "loc_bought_homburg",    "loc_bought_bowler_hat",  "loc_bought_cap",         "loc_bought_news_cap"],
+            ["loc_bought_sports_helmet","loc_bought_hard_hat",   "loc_bought_chefs_hat",    "loc_bought_propeller_hat","loc_bought_cowboy_hat","loc_bought_horns",       "loc_bought_hotdog_hat"],
+            ["loc_bought_milk_hat",    "loc_bought_pirate_hat",  "loc_bought_top_hat",      "loc_bought_party_hat",  "loc_bought_ushanka",     "loc_bought_balaclava",   "loc_bought_cat_ears"],
+            ["loc_bought_curly_hair",  "loc_bought_clown_hair",  "loc_bought_crown",        "loc_bought_halo",       "loc_bought_jesters_hat", "loc_bought_ghost_hat",   "loc_bought_tooop_hat"],
+            ["loc_bought_shroom_hat",  "loc_bought_witch_hat",   "loc_bought_savannah_hair","F",                     "F",                      "F",                      "F"]
+        ]
+    },
+
+    "cw_artifacts_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 36,
+        "item_height": 36,
+        "rows": [
+            ["loc_filmed_ribcage", "loc_filmed_skull",    "loc_filmed_spine",   "loc_filmed_bone",    "loc_filmed_apple",    "loc_filmed_reporter_mic", "F"],
+            ["loc_filmed_brain_on_a_stick","loc_filmed_radio","loc_filmed_shroom","loc_filmed_animal_statues","loc_filmed_radioactive_container","loc_filmed_old_painting","loc_filmed_chorby"]
+        ]
+    },
+
+    "cw_store_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 36,
+        "item_height": 36,
+        "rows": [
+            ["loc_bought_old_flashlight","loc_bought_flare","loc_bought_modern_flashlight","loc_bought_long_flashlight","loc_bought_modern_flashlight_pro","loc_bought_long_flashlight_pro","loc_bought_hugger"],
+            ["loc_bought_defibrillator","loc_bought_reporter_mic","loc_bought_boom_mic","loc_bought_clapper","loc_bought_sound_player","loc_bought_goo_ball","loc_bought_rescue_hook"],
+            ["loc_bought_shock_stick","loc_bought_sketch_pad","loc_bought_party_popper","F","F","F","F"]
+        ]
+    },
+
+    "cw_emotes_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 36,
+        "item_height": 36,
+        "rows": [
+            ["loc_bought_applause","loc_bought_workout_1","loc_bought_confused","loc_bought_dance_103","loc_bought_caring","loc_bought_ancient_gestures_3","loc_bought_ancient_gestures_2"],
+            ["loc_bought_dance_102","loc_bought_dance_101","loc_bought_backflip","loc_bought_yoga","loc_bought_workout_2","loc_bought_gymnastics","loc_bought_thumbnail_1"],
+            ["loc_bought_thumbnail_2","loc_bought_ancient_gestures_1","F","F","F","F","F"]
+        ]
+    },
+
+    "cw_sponsorships_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 36,
+        "item_height": 36,
+        "rows": [
+            ["loc_completed_sponsorship_1","loc_completed_sponsorship_2","loc_completed_sponsorship_3","loc_completed_sponsorship_4","loc_completed_sponsorship_5","loc_completed_sponsorship_6","loc_completed_sponsorship_7"],
+            ["loc_completed_sponsorship_8","loc_completed_sponsorship_9","loc_completed_sponsorship_10","loc_completed_sponsorship_11","loc_completed_sponsorship_12","loc_completed_sponsorship_13","loc_completed_sponsorship_14"],
+            ["loc_completed_sponsorship_15","loc_completed_sponsorship_16","loc_completed_sponsorship_17","loc_completed_sponsorship_18","loc_completed_sponsorship_19","loc_completed_sponsorship_20","F"]
+        ]
+    },
+
+    "cw_chorby_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 36,
+        "item_height": 36,
+        "rows": [
+            ["loc_found_chorby_1","loc_found_chorby_2","loc_found_chorby_3","loc_found_chorby_4","loc_found_chorby_5","loc_found_chorby_6","loc_found_chorby_7"],
+            ["loc_found_chorby_8","loc_found_chorby_9","loc_found_chorby_10","loc_found_chorby_11","loc_found_chorby_12","loc_found_chorby_13","loc_found_chorby_14"],
+            ["loc_found_chorby_15","loc_found_chorby_16","loc_found_chorby_17","loc_found_chorby_18","loc_found_chorby_19","loc_found_chorby_20","loc_found_chorby_21"]
+        ]
+    },
+
+    "cw_days_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 32,
+        "item_height": 32,
+        "rows": [
+            ["loc_day_1", "loc_day_2", "loc_day_3", "loc_day_4", "loc_day_5", "loc_day_6", "loc_day_7"],
+            ["loc_day_8", "loc_day_9", "loc_day_10","loc_day_11","loc_day_12","loc_day_13","loc_day_14"],
+            ["loc_day_15","loc_day_16","loc_day_17","loc_day_18","loc_day_19","loc_day_20","loc_day_21"],
+            ["loc_day_22","loc_day_23","loc_day_24","loc_day_25","loc_day_26","loc_day_27","loc_day_28"],
+            ["loc_day_29","loc_day_30","loc_day_31","loc_day_32","loc_day_33","loc_day_34","loc_day_35"],
+            ["loc_day_36","loc_day_37","loc_day_38","loc_day_39","loc_day_40","loc_day_41","loc_day_42"],
+            ["loc_day_43","loc_day_44","loc_day_45","loc_day_46","loc_day_47","loc_day_48","loc_day_49"],
+            ["loc_day_50","loc_day_51","loc_day_52","loc_day_53","loc_day_54","loc_day_55","loc_day_56"],
+            ["loc_day_57","loc_day_58","loc_day_59","loc_day_60","loc_day_61","loc_day_62","loc_day_63"]
+        ]
+    },
+
+    "cw_quotas_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 36,
+        "item_height": 36,
+        "rows": [
+            ["loc_quota_1","loc_quota_2","loc_quota_3","loc_quota_4","loc_quota_5","loc_quota_6","loc_quota_7"],
+            ["loc_quota_8","loc_quota_9","loc_quota_10","loc_quota_11","loc_quota_12","loc_quota_13","loc_quota_14"],
+            ["loc_quota_15","loc_quota_16","loc_quota_17","loc_quota_18","loc_quota_19","loc_quota_20","loc_quota_21"]
+        ]
+    },
+
+    "cw_views_grid": {
+        "type": "itemgrid",
+        "item_margin": "3,3",
+        "item_width": 32,
+        "item_height": 32,
+        "rows": [
+            ["loc_views_day_1", "loc_views_day_2", "loc_views_day_3", "loc_views_day_4", "loc_views_day_5", "loc_views_day_6", "loc_views_day_7"],
+            ["loc_views_day_8", "loc_views_day_9", "loc_views_day_10","loc_views_day_11","loc_views_day_12","loc_views_day_13","loc_views_day_14"],
+            ["loc_views_day_15","loc_views_day_16","loc_views_day_17","loc_views_day_18","loc_views_day_19","loc_views_day_20","loc_views_day_21"],
+            ["loc_views_day_22","loc_views_day_23","loc_views_day_24","loc_views_day_25","loc_views_day_26","loc_views_day_27","loc_views_day_28"],
+            ["loc_views_day_29","loc_views_day_30","loc_views_day_31","loc_views_day_32","loc_views_day_33","loc_views_day_34","loc_views_day_35"],
+            ["loc_views_day_36","loc_views_day_37","loc_views_day_38","loc_views_day_39","loc_views_day_40","loc_views_day_41","loc_views_day_42"],
+            ["loc_views_day_43","loc_views_day_44","loc_views_day_45","loc_views_day_46","loc_views_day_47","loc_views_day_48","loc_views_day_49"],
+            ["loc_views_day_50","loc_views_day_51","loc_views_day_52","loc_views_day_53","loc_views_day_54","loc_views_day_55","loc_views_day_56"],
+            ["loc_views_day_57","loc_views_day_58","loc_views_day_59","loc_views_day_60","loc_views_day_61","loc_views_day_62","loc_views_day_63"]
+        ]
+    },
+
+    "cw_goals_grid": {
+        "type": "itemgrid",
+        "item_margin": "4,4",
+        "item_width": 44,
+        "item_height": 44,
+        "rows": [
+            ["SettingViralSensation", "SettingViewsGoal",    "GoalViewsTarget",  "ProgressViews",  "F"],
+            ["SettingQuotaGoal",      "SettingQuotaReq",     "GoalQuotaCount",   "ProgressQuotas", "F"],
+            ["SettingMonsterHunter",  "SettingDifficultMonsters","GoalMonsterCount","ProgressMonsters","F"],
+            ["SettingHatCollector",   "F",                   "GoalHatCount",     "ProgressHats",   "F"]
+        ]
+    },
+
+    "cw_options_grid": {
+        "type": "itemgrid",
+        "item_margin": "4,4",
+        "item_width": 44,
+        "item_height": 44,
+        "rows": [
+            ["SettingViewsChecks", "SettingMonsterTiers", "SettingFillerMultiSightings", "F"],
+            ["SettingIncludeSponsorships", "SettingSponsorFiller", "SettingMultiplayer", "F"]
+        ]
+    }
+}

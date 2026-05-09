@@ -1,0 +1,32 @@
+{
+    "broadcast_horizontal": {
+        "type": "container",
+        "background": "#00000000",
+        "content": {
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
+                {
+                    "type": "group",
+                    "header": "Key Items",
+                    "header_background": "#3e4b57",
+                    "content": {"type": "layout", "key": "cw_key_items_grid"}
+                },
+                {
+                    "type": "group",
+                    "header": "Goals",
+                    "header_background": "#5a3e1a",
+                    "content": {"type": "layout", "key": "cw_goals_grid"}
+                }
+            ]
+        }
+    },
+    "broadcast_vertical": {
+        "type": "container",
+        "background": "#00000000",
+        "content": {
+            "type": "layout",
+            "key": "broadcast_horizontal"
+        }
+    }
+}

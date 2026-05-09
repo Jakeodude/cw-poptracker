@@ -1,0 +1,306 @@
+[
+    {
+        "name": "Progressive Camera",
+        "type": "progressive",
+        "initial_stage_idx": 0,
+        "img": "images/items/prog_camera.png",
+        "stages": [
+            {
+                "name": "Camera Upgrade 1 (120s film)",
+                "img": "images/items/prog_camera.png",
+                "img_mods": "overlay|/images/items/overlay_1.png,",
+                "codes": "ProgCamera1,ProgCamera",
+                "inherit_codes": false
+            },
+            {
+                "name": "Camera Upgrade 2 (150s film)",
+                "img": "images/items/prog_camera.png",
+                "img_mods": "overlay|/images/items/overlay_2.png,",
+                "codes": "ProgCamera2,ProgCamera",
+                "inherit_codes": false
+            },
+            {
+                "name": "Camera Upgrade 3 (180s film)",
+                "img": "images/items/prog_camera.png",
+                "img_mods": "overlay|/images/items/overlay_3.png,",
+                "codes": "ProgCamera3,ProgCamera",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Progressive Oxygen",
+        "type": "progressive",
+        "initial_stage_idx": 0,
+        "img": "images/items/prog_oxygen.png",
+        "stages": [
+            {
+                "name": "Oxygen Upgrade 1 (700s)",
+                "img": "images/items/prog_oxygen.png",
+                "img_mods": "overlay|/images/items/overlay_1.png,",
+                "codes": "ProgOxygen1,ProgOxygen",
+                "inherit_codes": false
+            },
+            {
+                "name": "Oxygen Upgrade 2 (900s)",
+                "img": "images/items/prog_oxygen.png",
+                "img_mods": "overlay|/images/items/overlay_2.png,",
+                "codes": "ProgOxygen2,ProgOxygen",
+                "inherit_codes": false
+            },
+            {
+                "name": "Oxygen Upgrade 3 (1100s)",
+                "img": "images/items/prog_oxygen.png",
+                "img_mods": "overlay|/images/items/overlay_3.png,",
+                "codes": "ProgOxygen3,ProgOxygen",
+                "inherit_codes": false
+            },
+            {
+                "name": "Oxygen Upgrade 4 (1500s)",
+                "img": "images/items/prog_oxygen.png",
+                "img_mods": "overlay|/images/items/overlay_4.png,",
+                "codes": "ProgOxygen4,ProgOxygen",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Diving Bell O2 Refill",
+        "type": "toggle",
+        "img": "images/items/diving_bell_o2.png",
+        "codes": "DivingBellO2"
+    },
+    {
+        "name": "Diving Bell Charger",
+        "type": "toggle",
+        "img": "images/items/diving_bell_charger.png",
+        "codes": "DivingBellCharger"
+    },
+    {
+        "name": "Progressive Views",
+        "type": "progressive",
+        "initial_stage_idx": 0,
+        "img": "images/items/prog_views.png",
+        "stages": [
+            {
+                "name": "Views Boost x1 (1.1x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_1.png,",
+                "codes": "ProgViews1,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x2 (1.21x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_2.png,",
+                "codes": "ProgViews2,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x3 (1.33x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_3.png,",
+                "codes": "ProgViews3,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x4 (1.46x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_4.png,",
+                "codes": "ProgViews4,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x5 (1.61x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_5.png,",
+                "codes": "ProgViews5,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x6 (1.77x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_6.png,",
+                "codes": "ProgViews6,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x7 (1.95x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_7.png,",
+                "codes": "ProgViews7,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x8 (2.14x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_8.png,",
+                "codes": "ProgViews8,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x9 (2.36x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_9.png,",
+                "codes": "ProgViews9,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x10 (2.59x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_10.png,",
+                "codes": "ProgViews10,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x11 (2.85x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_11.png,",
+                "codes": "ProgViews11,ProgViews",
+                "inherit_codes": false
+            },
+            {
+                "name": "Views Boost x12 (3.14x)",
+                "img": "images/items/prog_views.png",
+                "img_mods": "overlay|/images/items/overlay_12.png,",
+                "codes": "ProgViews12,ProgViews",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Progressive Stamina",
+        "type": "progressive",
+        "initial_stage_idx": 0,
+        "img": "images/items/prog_stamina.png",
+        "stages": [
+            {
+                "name": "Stamina Upgrade 1 (125 max)",
+                "img": "images/items/prog_stamina.png",
+                "img_mods": "overlay|/images/items/overlay_1.png,",
+                "codes": "ProgStamina1,ProgStamina",
+                "inherit_codes": false
+            },
+            {
+                "name": "Stamina Upgrade 2 (150 max)",
+                "img": "images/items/prog_stamina.png",
+                "img_mods": "overlay|/images/items/overlay_2.png,",
+                "codes": "ProgStamina2,ProgStamina",
+                "inherit_codes": false
+            },
+            {
+                "name": "Stamina Upgrade 3 (175 max)",
+                "img": "images/items/prog_stamina.png",
+                "img_mods": "overlay|/images/items/overlay_3.png,",
+                "codes": "ProgStamina3,ProgStamina",
+                "inherit_codes": false
+            },
+            {
+                "name": "Stamina Upgrade 4 (200 max)",
+                "img": "images/items/prog_stamina.png",
+                "img_mods": "overlay|/images/items/overlay_4.png,",
+                "codes": "ProgStamina4,ProgStamina",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Progressive Stamina Regen",
+        "type": "progressive",
+        "initial_stage_idx": 0,
+        "img": "images/items/prog_stamina_regen.png",
+        "stages": [
+            {
+                "name": "Stamina Regen Upgrade 1 (150%)",
+                "img": "images/items/prog_stamina_regen.png",
+                "img_mods": "overlay|/images/items/overlay_1.png,",
+                "codes": "ProgStaminaRegen1,ProgStaminaRegen",
+                "inherit_codes": false
+            },
+            {
+                "name": "Stamina Regen Upgrade 2 (200%)",
+                "img": "images/items/prog_stamina_regen.png",
+                "img_mods": "overlay|/images/items/overlay_2.png,",
+                "codes": "ProgStaminaRegen2,ProgStaminaRegen",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "$50",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/money_50.png",
+        "codes": "Money50"
+    },
+    {
+        "name": "$100",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/money_100.png",
+        "codes": "Money100"
+    },
+    {
+        "name": "$200",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/money_200.png",
+        "codes": "Money200"
+    },
+    {
+        "name": "$300",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/money_300.png",
+        "codes": "Money300"
+    },
+    {
+        "name": "$400",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/money_400.png",
+        "codes": "Money400"
+    },
+    {
+        "name": "500 Meta Coins",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/meta_coins_500.png",
+        "codes": "MetaCoins500"
+    },
+    {
+        "name": "1,000 Meta Coins",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/meta_coins_1000.png",
+        "codes": "MetaCoins1000"
+    },
+    {
+        "name": "1,500 Meta Coins",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/meta_coins_1500.png",
+        "codes": "MetaCoins1500"
+    },
+    {
+        "name": "2,000 Meta Coins",
+        "type": "consumable",
+        "max_quantity": 999,
+        "img": "images/items/meta_coins_2000.png",
+        "codes": "MetaCoins2000"
+    },
+    {
+        "name": "Monster Spawn Trap",
+        "type": "consumable",
+        "max_quantity": 10,
+        "img": "images/items/monster_spawn_trap.png",
+        "codes": "MonsterSpawnTrap"
+    },
+    {
+        "name": "Ragdoll Trap",
+        "type": "consumable",
+        "max_quantity": 10,
+        "img": "images/items/ragdoll_trap.png",
+        "codes": "RagdollTrap"
+    }
+]

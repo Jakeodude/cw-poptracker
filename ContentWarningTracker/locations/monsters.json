@@ -7,273 +7,273 @@
         "children": [
             {
                 "name": "Filmed Slurper",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1172, "y": 483}],
                 "sections": [
-                    {"name": "Filmed Slurper", "item_count": 1},
-                    {"name": "Filmed Slurper 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Slurper 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Slurper", "item_count": 1, "code": [98765300]},
+                    {"name": "Filmed Slurper 2", "item_count": 1, "code": [98765330], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Slurper 3", "item_count": 1, "code": [98765351], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Zombe",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 952, "y": 250}],
                 "sections": [
-                    {"name": "Filmed Zombe", "item_count": 1},
-                    {"name": "Filmed Zombe 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Zombe 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Zombe", "item_count": 1, "code": [98765301]},
+                    {"name": "Filmed Zombe 2", "item_count": 1, "code": [98765331], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Zombe 3", "item_count": 1, "code": [98765352], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Button Robot",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 941, "y": 488}],
                 "sections": [
-                    {"name": "Filmed Button Robot", "item_count": 1},
-                    {"name": "Filmed Button Robot 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Button Robot 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Button Robot", "item_count": 1, "code": [98765307]},
+                    {"name": "Filmed Button Robot 2", "item_count": 1, "code": [98765332], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Button Robot 3", "item_count": 1, "code": [98765353], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Puffo",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 854, "y": 1154}],
                 "sections": [
-                    {"name": "Filmed Puffo", "item_count": 1},
-                    {"name": "Filmed Puffo 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Puffo 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Puffo", "item_count": 1, "code": [98765308]},
+                    {"name": "Filmed Puffo 2", "item_count": 1, "code": [98765333], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Puffo 3", "item_count": 1, "code": [98765354], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Whisk",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1206, "y": 155}],
                 "sections": [
-                    {"name": "Filmed Whisk", "item_count": 1},
-                    {"name": "Filmed Whisk 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Whisk 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Whisk", "item_count": 1, "code": [98765311]},
+                    {"name": "Filmed Whisk 2", "item_count": 1, "code": [98765334], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Whisk 3", "item_count": 1, "code": [98765355], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Arms",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 725, "y": 592}],
                 "sections": [
-                    {"name": "Filmed Arms", "item_count": 1},
-                    {"name": "Filmed Arms 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Arms 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Arms", "item_count": 1, "code": [98765322]},
+                    {"name": "Filmed Arms 2", "item_count": 1, "code": [98765335], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Arms 3", "item_count": 1, "code": [98765356], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Worm",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 533, "y": 1355}],
                 "sections": [
-                    {"name": "Filmed Worm", "item_count": 1},
-                    {"name": "Filmed Worm 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Worm 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Worm", "item_count": 1, "code": [98765302]},
+                    {"name": "Filmed Worm 2", "item_count": 1, "code": [98765336], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Worm 3", "item_count": 1, "code": [98765357], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Mouthe",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 225, "y": 218}],
                 "sections": [
-                    {"name": "Filmed Mouthe", "item_count": 1},
-                    {"name": "Filmed Mouthe 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Mouthe 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Mouthe", "item_count": 1, "code": [98765303]},
+                    {"name": "Filmed Mouthe 2", "item_count": 1, "code": [98765337], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Mouthe 3", "item_count": 1, "code": [98765358], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Spider",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1508, "y": 442}],
                 "sections": [
-                    {"name": "Filmed Spider", "item_count": 1},
-                    {"name": "Filmed Spider 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Spider 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Spider", "item_count": 1, "code": [98765312]},
+                    {"name": "Filmed Spider 2", "item_count": 1, "code": [98765338], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Spider 3", "item_count": 1, "code": [98765359], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Bomber",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1329, "y": 1583}],
                 "sections": [
-                    {"name": "Filmed Bomber", "item_count": 1},
-                    {"name": "Filmed Bomber 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Bomber 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Bomber", "item_count": 1, "code": [98765316]},
+                    {"name": "Filmed Bomber 2", "item_count": 1, "code": [98765339], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Bomber 3", "item_count": 1, "code": [98765360], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Dog",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 250, "y": 789}],
                 "sections": [
-                    {"name": "Filmed Dog", "item_count": 1},
-                    {"name": "Filmed Dog 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Dog 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Dog", "item_count": 1, "code": [98765317]},
+                    {"name": "Filmed Dog 2", "item_count": 1, "code": [98765340], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Dog 3", "item_count": 1, "code": [98765361], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Eye Guy",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1162, "y": 793}],
                 "sections": [
-                    {"name": "Filmed Eye Guy", "item_count": 1},
-                    {"name": "Filmed Eye Guy 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Eye Guy 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Eye Guy", "item_count": 1, "code": [98765318]},
+                    {"name": "Filmed Eye Guy 2", "item_count": 1, "code": [98765341], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Eye Guy 3", "item_count": 1, "code": [98765362], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Knifo",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 459, "y": 752}],
                 "sections": [
-                    {"name": "Filmed Knifo", "item_count": 1},
-                    {"name": "Filmed Knifo 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Knifo 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Knifo", "item_count": 1, "code": [98765320]},
+                    {"name": "Filmed Knifo 2", "item_count": 1, "code": [98765342], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Knifo 3", "item_count": 1, "code": [98765363], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Larva",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1165, "y": 1180}],
                 "sections": [
-                    {"name": "Filmed Larva", "item_count": 1},
-                    {"name": "Filmed Larva 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Larva 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Larva", "item_count": 1, "code": [98765321]},
+                    {"name": "Filmed Larva 2", "item_count": 1, "code": [98765343], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Larva 3", "item_count": 1, "code": [98765364], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Harpooner",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1448, "y": 659}],
                 "sections": [
-                    {"name": "Filmed Harpooner", "item_count": 1},
-                    {"name": "Filmed Harpooner 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Harpooner 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Harpooner", "item_count": 1, "code": [98765323]},
+                    {"name": "Filmed Harpooner 2", "item_count": 1, "code": [98765344], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Harpooner 3", "item_count": 1, "code": [98765365], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Barnacle Ball",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 228, "y": 511}],
                 "sections": [
-                    {"name": "Filmed Barnacle Ball", "item_count": 1},
-                    {"name": "Filmed Barnacle Ball 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Barnacle Ball 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Barnacle Ball", "item_count": 1, "code": [98765325]},
+                    {"name": "Filmed Barnacle Ball 2", "item_count": 1, "code": [98765345], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Barnacle Ball 3", "item_count": 1, "code": [98765366], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Snatcho",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 979, "y": 638}],
                 "sections": [
-                    {"name": "Filmed Snatcho", "item_count": 1},
-                    {"name": "Filmed Snatcho 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Snatcho 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Snatcho", "item_count": 1, "code": [98765310]},
+                    {"name": "Filmed Snatcho 2", "item_count": 1, "code": [98765346], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Snatcho 3", "item_count": 1, "code": [98765367], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Jelly",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 372, "y": 1044}],
                 "sections": [
-                    {"name": "Filmed Jelly", "item_count": 1},
-                    {"name": "Filmed Jelly 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Jelly 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Jelly", "item_count": 1, "code": [98765314]},
+                    {"name": "Filmed Jelly 2", "item_count": 1, "code": [98765347], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Jelly 3", "item_count": 1, "code": [98765368], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Fire",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 232, "y": 1308}],
                 "sections": [
-                    {"name": "Filmed Fire", "item_count": 1},
-                    {"name": "Filmed Fire 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Fire 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Fire", "item_count": 1, "code": [98765319]},
+                    {"name": "Filmed Fire 2", "item_count": 1, "code": [98765348], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Fire 3", "item_count": 1, "code": [98765369], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Mime",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 935, "y": 904}],
                 "sections": [
-                    {"name": "Filmed Mime", "item_count": 1},
-                    {"name": "Filmed Mime 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Mime 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Mime", "item_count": 1, "code": [98765324]},
+                    {"name": "Filmed Mime 2", "item_count": 1, "code": [98765349], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Mime 3", "item_count": 1, "code": [98765370], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Streamer",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 145, "y": 265}],
                 "sections": [
-                    {"name": "Filmed Streamer", "item_count": 1},
-                    {"name": "Filmed Streamer 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Streamer 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Streamer", "item_count": 1, "code": [98765328]},
+                    {"name": "Filmed Streamer 2", "item_count": 1, "code": [98765350], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Streamer 3", "item_count": 1, "code": [98765371], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Flicker",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 708, "y": 220}],
                 "sections": [
-                    {"name": "Filmed Flicker", "item_count": 1},
-                    {"name": "Filmed Flicker 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Flicker 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Flicker", "item_count": 1, "code": [98765304]},
+                    {"name": "Filmed Flicker 2", "item_count": 1, "code": [98765373], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Flicker 3", "item_count": 1, "code": [98765382], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Cam Creep",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1305, "y": 1301}],
                 "sections": [
-                    {"name": "Filmed Cam Creep", "item_count": 1},
-                    {"name": "Filmed Cam Creep 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Cam Creep 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Cam Creep", "item_count": 1, "code": [98765305]},
+                    {"name": "Filmed Cam Creep 2", "item_count": 1, "code": [98765374], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Cam Creep 3", "item_count": 1, "code": [98765383], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Infiltrator",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1514, "y": 1185}],
                 "sections": [
-                    {"name": "Filmed Infiltrator", "item_count": 1},
-                    {"name": "Filmed Infiltrator 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Infiltrator 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Infiltrator", "item_count": 1, "code": [98765306]},
+                    {"name": "Filmed Infiltrator 2", "item_count": 1, "code": [98765375], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Infiltrator 3", "item_count": 1, "code": [98765384], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Black Hole Bot",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 448, "y": 1495}],
                 "sections": [
-                    {"name": "Filmed Black Hole Bot", "item_count": 1},
-                    {"name": "Filmed Black Hole Bot 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Black Hole Bot 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Black Hole Bot", "item_count": 1, "code": [98765309]},
+                    {"name": "Filmed Black Hole Bot 2", "item_count": 1, "code": [98765376], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Black Hole Bot 3", "item_count": 1, "code": [98765385], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Ear",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 818, "y": 1572}],
                 "sections": [
-                    {"name": "Filmed Ear", "item_count": 1},
-                    {"name": "Filmed Ear 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Ear 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Ear", "item_count": 1, "code": [98765313]},
+                    {"name": "Filmed Ear 2", "item_count": 1, "code": [98765377], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Ear 3", "item_count": 1, "code": [98765386], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Snail Spawner",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1456, "y": 215}],
                 "sections": [
-                    {"name": "Filmed Snail Spawner", "item_count": 1},
-                    {"name": "Filmed Snail Spawner 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Snail Spawner 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Snail Spawner", "item_count": 1, "code": [98765326]},
+                    {"name": "Filmed Snail Spawner 2", "item_count": 1, "code": [98765378], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Snail Spawner 3", "item_count": 1, "code": [98765387], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Big Slap",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 451, "y": 499}],
                 "sections": [
-                    {"name": "Filmed Big Slap", "item_count": 1},
-                    {"name": "Filmed Big Slap 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Big Slap 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Big Slap", "item_count": 1, "code": [98765327]},
+                    {"name": "Filmed Big Slap 2", "item_count": 1, "code": [98765379], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Big Slap 3", "item_count": 1, "code": [98765388], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Ultra Knifo",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 641, "y": 906}],
                 "sections": [
-                    {"name": "Filmed Ultra Knifo", "item_count": 1},
-                    {"name": "Filmed Ultra Knifo 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Ultra Knifo 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Ultra Knifo", "item_count": 1, "code": [98765329]},
+                    {"name": "Filmed Ultra Knifo 2", "item_count": 1, "code": [98765380], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Ultra Knifo 3", "item_count": 1, "code": [98765389], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             },
             {
                 "name": "Filmed Weeping",
-                "map_locations": [{"map": "Monsters", "x": 100, "y": 100}],
+                "map_locations": [{"map": "Monsters", "x": 1075, "y": 1512}],
                 "visibility_rules": ["SettingMultiplayerOn"],
                 "sections": [
-                    {"name": "Filmed Weeping", "item_count": 1},
-                    {"name": "Filmed Weeping 2", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]},
-                    {"name": "Filmed Weeping 3", "item_count": 1, "visibility_rules": ["SettingMonsterTiersOn"]}
+                    {"name": "Filmed Weeping", "item_count": 1, "code": [98765315]},
+                    {"name": "Filmed Weeping 2", "item_count": 1, "code": [98765372], "visibility_rules": ["SettingMonsterTiersOn"]},
+                    {"name": "Filmed Weeping 3", "item_count": 1, "code": [98765381], "visibility_rules": ["SettingMonsterTiersOn"]}
                 ]
             }
         ]

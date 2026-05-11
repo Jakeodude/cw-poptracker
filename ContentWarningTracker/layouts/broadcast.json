@@ -1,5 +1,5 @@
 {
-    "broadcast_horizontal": {
+    "tracker_broadcast": {
         "type": "container",
         "background": "#00000000",
         "content": {
@@ -19,14 +19,6 @@
                     "content": {"type": "layout", "key": "cw_goals_grid"}
                 }
             ]
-        }
-    },
-    "broadcast_vertical": {
-        "type": "container",
-        "background": "#00000000",
-        "content": {
-            "type": "layout",
-            "key": "broadcast_horizontal"
         }
     }
 }

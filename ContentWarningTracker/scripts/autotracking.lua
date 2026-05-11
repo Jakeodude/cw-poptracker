@@ -155,7 +155,6 @@ local function buildLocationMap()
         [328]="Filmed Streamer",      [329]="Filmed Ultra Knifo",
     }
     for offset, name in pairs(MONSTER_OFFSETS) do
-        local tog_name = name:lower():gsub(" ", "_"):gsub("[^%w_]", "")
         m[offset] = {
             sec = "@Monsters/" .. name .. "/" .. name,
             tog = nil,  -- monsters tracked via section only; map pin updates automatically
@@ -333,11 +332,19 @@ end
 
 local LOCATION_MAP = buildLocationMap()
 
+-- CUR_INDEX tracks the highest AP item index processed so far.
+-- Prevents re-processing items already seen when the AP server re-sends
+-- the full item list on reconnect.
+local CUR_INDEX = -1
+
 -- ============================================================
 -- CLEAR / RESET HANDLER
+-- PopTracker calls this on connect and when the player starts a new game.
+-- slot_data is the slot_data table from the AP server (may be nil).
 -- ============================================================
-Archipelago:AddClearHandler("CW_Clear", function()
+Archipelago:AddClearHandler("CW_Clear", function(slot_data)
     print("[CW Tracker] Clearing all tracked state...")
+    CUR_INDEX = -1
 
     -- Reset progressive items to stage 0
     local progressives = {"ProgCamera","ProgOxygen","ProgViews","ProgStamina","ProgStaminaRegen"}
@@ -380,12 +387,63 @@ Archipelago:AddClearHandler("CW_Clear", function()
             if sec then sec.AvailableChestCount = 1 end
         end
     end
+
+    -- Apply slot_data settings received from the AP server on connect.
+    -- slot_data may be nil if the server doesn't provide it.
+    if slot_data then
+        local bool_settings = {
+            { key = "viral_sensation",        code = "SettingViralSensation"       },
+            { key = "views_goal",             code = "SettingViewsGoal"            },
+            { key = "quota_goal",             code = "SettingQuotaGoal"            },
+            { key = "monster_hunter",         code = "SettingMonsterHunter"        },
+            { key = "hat_collector",          code = "SettingHatCollector"         },
+            { key = "views_checks",           code = "SettingViewsChecks"          },
+            { key = "quota_requirement",      code = "SettingQuotaReq"             },
+            { key = "monster_tiers",          code = "SettingMonsterTiers"         },
+            { key = "difficult_monsters",     code = "SettingDifficultMonsters"    },
+            { key = "multiplayer_mode",       code = "SettingMultiplayer"          },
+            { key = "include_sponsorships",   code = "SettingIncludeSponsorships"  },
+            { key = "sponsor_filler",         code = "SettingSponsorFiller"        },
+            { key = "filler_multi_sightings", code = "SettingFillerMultiSightings" },
+        }
+        for _, s in ipairs(bool_settings) do
+            local val = slot_data[s.key]
+            if val ~= nil then
+                local item = Tracker:FindObjectForCode(s.code)
+                if item then
+                    -- Progressive settings: stage 0 = OFF, stage 1 = ON
+                    item.CurrentStage = (val == true or val == 1) and 1 or 0
+                end
+            end
+        end
+
+        local function setCount(code, value)
+            local item = Tracker:FindObjectForCode(code)
+            if item then item.AcquiredCount = tonumber(value) or 0 end
+        end
+        if slot_data["views_goal_target"]    ~= nil then setCount("GoalViewsTarget",  slot_data["views_goal_target"])    end
+        if slot_data["quota_count"]          ~= nil then setCount("GoalQuotaCount",   slot_data["quota_count"])          end
+        if slot_data["monster_hunter_count"] ~= nil then setCount("GoalMonsterCount", slot_data["monster_hunter_count"]) end
+        if slot_data["hat_collector_count"]  ~= nil then setCount("GoalHatCount",     slot_data["hat_collector_count"])  end
+
+        print("[CW Tracker] Slot data applied.")
+        print("  Viral Sensation: "      .. tostring(slot_data["viral_sensation"]))
+        print("  Views Goal Target: "    .. tostring(slot_data["views_goal_target"]))
+        print("  Quota Count: "          .. tostring(slot_data["quota_count"]))
+        print("  Monster Hunter Count: " .. tostring(slot_data["monster_hunter_count"]))
+        print("  Hat Collector Count: "  .. tostring(slot_data["hat_collector_count"]))
+    end
 end)
 
 -- ============================================================
 -- ITEM RECEIVED HANDLER
+-- index is the AP item index; used with CUR_INDEX to deduplicate
+-- items that the server re-sends on reconnect.
 -- ============================================================
-Archipelago:AddItemReceivedHandler("CW_ItemReceived", function(item_id, item_name, player_name)
+Archipelago:AddItemHandler("CW_ItemReceived", function(index, item_id, item_name, player_name)
+    if index <= CUR_INDEX then return end
+    CUR_INDEX = index
+
     local offset = item_id - BASE_ID
     local mapping = ITEM_OFFSETS[offset]
     if not mapping then
@@ -401,43 +459,43 @@ Archipelago:AddItemReceivedHandler("CW_ItemReceived", function(item_id, item_nam
 
     if mapping.type == "progressive" then
         item.CurrentStage = item.CurrentStage + 1
-        print("[CW Tracker] Received progressive: " .. mapping.code .. " → stage " .. item.CurrentStage)
+        print("[CW Tracker] Received progressive: " .. mapping.code .. " -> stage " .. item.CurrentStage)
     elseif mapping.type == "toggle" then
         item.Active = true
         print("[CW Tracker] Received toggle: " .. mapping.code)
     elseif mapping.type == "consumable" then
         item.AcquiredCount = (item.AcquiredCount or 0) + 1
-        print("[CW Tracker] Received consumable: " .. mapping.code .. " × " .. item.AcquiredCount)
+        print("[CW Tracker] Received consumable: " .. mapping.code .. " x" .. item.AcquiredCount)
     end
 end)
 
 -- ============================================================
 -- LOCATION CHECKED HANDLER
 -- ============================================================
--- Track progress counters
+-- Track progress counters (reset on clear via CUR_INDEX / handler re-run)
 local progress = { monsters = 0, hats = 0, quotas = 0, views = 0 }
 
-local function isMonsterSection(sec)
-    return sec:find("^@Monsters/") ~= nil
-end
-local function isHatSection(sec)
-    return sec:find("^@Hats/Hat Purchases/Bought") ~= nil
-end
-local function isQuotaSection(sec)
-    return sec:find("^@Days and Quotas/Quotas/Met Quota") ~= nil
-end
-local function isViewSection(sec)
-    return sec:find("^@View Milestones/") ~= nil
-end
 local function isMonsterBaseSection(sec)
-    -- Only tier-1 (base) monster checks count for Monster Hunter progress
-    -- Base checks are "@Monsters/Name/Name" where name doesn't end in " 2" or " 3"
+    -- Only tier-1 (base) monster checks count for Monster Hunter progress.
+    -- Base checks are "@Monsters/Name/Name" — section name does NOT end in " 2" or " 3".
     if not sec:find("^@Monsters/") then return false end
     local last = sec:match(".+/(.+)$")
     return last and not last:match(" [23]$")
 end
 
-Archipelago:AddLocationCheckedHandler("CW_LocationChecked", function(location_id)
+local function isHatSection(sec)
+    return sec:find("^@Hats/Hat Purchases/Bought") ~= nil
+end
+
+local function isQuotaSection(sec)
+    return sec:find("^@Days and Quotas/Quotas/Met Quota") ~= nil
+end
+
+local function isViewSection(sec)
+    return sec:find("^@View Milestones/") ~= nil
+end
+
+Archipelago:AddLocationHandler("CW_LocationChecked", function(location_id, location_name)
     local offset = location_id - BASE_ID
     local entry = LOCATION_MAP[offset]
     if not entry then
@@ -447,7 +505,7 @@ Archipelago:AddLocationCheckedHandler("CW_LocationChecked", function(location_id
 
     print("[CW Tracker] Checked location: " .. (entry.sec or "?"))
 
-    -- Mark section and toggle
+    -- Mark section and optional toggle
     clearLocation(entry.sec, entry.tog)
 
     -- Update live progress counters
@@ -471,70 +529,6 @@ Archipelago:AddLocationCheckedHandler("CW_LocationChecked", function(location_id
         local pv = Tracker:FindObjectForCode("ProgressViews")
         if pv then pv.AcquiredCount = progress.views end
     end
-end)
-
--- ============================================================
--- SLOT DATA HANDLER
--- Maps slot_data keys → settings items
--- ============================================================
-local function setToggleSetting(code_on, code_off, value)
-    -- code_on  = the code that means ON  (e.g. "SettingViralSensationOn")
-    -- code_off = not used directly; we set stage on the setting item
-    -- For progressive-based settings, stage 1 = ON, stage 0 = OFF
-    local item = Tracker:FindObjectForCode(code_on)
-    if not item then return end
-    -- The item code is the ON stage code; the item itself is the progressive container
-    -- We set its CurrentStage: 1 = ON, 0 = OFF
-    item.CurrentStage = value and 1 or 0
-end
-
-local function setCounterValue(code, value)
-    local item = Tracker:FindObjectForCode(code)
-    if item then item.AcquiredCount = tonumber(value) or 0 end
-end
-
-Archipelago:AddSlotDataHandler("CW_SlotData", function(slot_data)
-    print("[CW Tracker] Slot data received.")
-
-    -- Goal toggles (boolean → stage 1 or 0)
-    local bool_settings = {
-        { key = "viral_sensation",      code = "SettingViralSensation"      },
-        { key = "views_goal",           code = "SettingViewsGoal"           },
-        { key = "quota_goal",           code = "SettingQuotaGoal"           },
-        { key = "monster_hunter",       code = "SettingMonsterHunter"       },
-        { key = "hat_collector",        code = "SettingHatCollector"        },
-        { key = "views_checks",         code = "SettingViewsChecks"         },
-        { key = "quota_requirement",    code = "SettingQuotaReq"            },
-        { key = "monster_tiers",        code = "SettingMonsterTiers"        },
-        { key = "difficult_monsters",   code = "SettingDifficultMonsters"   },
-        { key = "multiplayer_mode",     code = "SettingMultiplayer"         },
-        { key = "include_sponsorships", code = "SettingIncludeSponsorships" },
-        { key = "sponsor_filler",       code = "SettingSponsorFiller"       },
-        { key = "filler_multi_sightings",code= "SettingFillerMultiSightings"},
-    }
-    for _, s in ipairs(bool_settings) do
-        local val = slot_data[s.key]
-        if val ~= nil then
-            local item = Tracker:FindObjectForCode(s.code)
-            if item then
-                -- These are progressive items with stage 0=OFF, 1=ON
-                item.CurrentStage = (val == true or val == 1) and 1 or 0
-            end
-        end
-    end
-
-    -- Numeric goal targets
-    if slot_data["views_goal_target"]    ~= nil then setCounterValue("GoalViewsTarget",  slot_data["views_goal_target"])    end
-    if slot_data["quota_count"]          ~= nil then setCounterValue("GoalQuotaCount",   slot_data["quota_count"])          end
-    if slot_data["monster_hunter_count"] ~= nil then setCounterValue("GoalMonsterCount", slot_data["monster_hunter_count"]) end
-    if slot_data["hat_collector_count"]  ~= nil then setCounterValue("GoalHatCount",     slot_data["hat_collector_count"])  end
-
-    print("[CW Tracker] Slot data applied.")
-    print("  Viral Sensation: " .. tostring(slot_data["viral_sensation"]))
-    print("  Views Goal Target: " .. tostring(slot_data["views_goal_target"]))
-    print("  Quota Count: " .. tostring(slot_data["quota_count"]))
-    print("  Monster Hunter Count: " .. tostring(slot_data["monster_hunter_count"]))
-    print("  Hat Collector Count: " .. tostring(slot_data["hat_collector_count"]))
 end)
 
 print("[CW Tracker] Auto-tracking ready. Waiting for AP connection...")

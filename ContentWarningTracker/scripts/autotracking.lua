@@ -389,49 +389,108 @@ Archipelago:AddClearHandler("CW_Clear", function(slot_data)
     end
 
     -- Apply slot_data settings received from the AP server on connect.
-    -- slot_data may be nil if the server doesn't provide it.
+    -- slot_data may be nil if the server doesn't send it (e.g. non-AP session).
     if slot_data then
+        print("[CW Tracker] Parsing slot_data...")
+
+        -- ----------------------------------------------------------------
+        -- TYPE-SAFE HELPERS
+        -- AP slot_data values can arrive as booleans, integers, or strings
+        -- depending on the game world implementation. These helpers handle
+        -- all three so we never crash on an unexpected type.
+        -- ----------------------------------------------------------------
+
+        -- toBool: returns true for boolean true, integer 1, or strings "1"/"true"
+        local function toBool(v)
+            if v == nil then return false end
+            if v == true  then return true  end
+            if v == false then return false end
+            local n = tonumber(v)
+            if n ~= nil  then return n ~= 0 end
+            local s = tostring(v):lower()
+            return s == "true" or s == "yes" or s == "on"
+        end
+
+        -- toNum: converts a value to a number; returns 0 on failure
+        local function toNum(v)
+            if v == nil then return 0 end
+            return tonumber(v) or 0
+        end
+
+        -- ----------------------------------------------------------------
+        -- BOOLEAN / TOGGLE SETTINGS
+        -- Each entry drives a two-stage progressive item in settings.json:
+        --   stage 0 = OFF  (SettingXxxOff code active)
+        --   stage 1 = ON   (SettingXxxOn  code active  → visibility_rules fire)
+        -- ----------------------------------------------------------------
         local bool_settings = {
-            { key = "viral_sensation",        code = "SettingViralSensation"       },
-            { key = "views_goal",             code = "SettingViewsGoal"            },
-            { key = "quota_goal",             code = "SettingQuotaGoal"            },
-            { key = "monster_hunter",         code = "SettingMonsterHunter"        },
-            { key = "hat_collector",          code = "SettingHatCollector"         },
-            { key = "views_checks",           code = "SettingViewsChecks"          },
-            { key = "quota_requirement",      code = "SettingQuotaReq"             },
-            { key = "monster_tiers",          code = "SettingMonsterTiers"         },
-            { key = "difficult_monsters",     code = "SettingDifficultMonsters"    },
-            { key = "multiplayer_mode",       code = "SettingMultiplayer"          },
-            { key = "include_sponsorships",   code = "SettingIncludeSponsorships"  },
-            { key = "sponsor_filler",         code = "SettingSponsorFiller"        },
-            { key = "filler_multi_sightings", code = "SettingFillerMultiSightings" },
+            -- Goals
+            { key = "viral_sensation",        code = "SettingViralSensation",       label = "Viral Sensation goal"         },
+            { key = "views_goal",             code = "SettingViewsGoal",            label = "Views goal"                   },
+            { key = "quota_goal",             code = "SettingQuotaGoal",            label = "Quota goal"                   },
+            { key = "monster_hunter",         code = "SettingMonsterHunter",        label = "Monster Hunter goal"          },
+            { key = "hat_collector",          code = "SettingHatCollector",         label = "Hat Collector goal"           },
+            -- World options (drive map visibility_rules)
+            { key = "views_checks",           code = "SettingViewsChecks",          label = "Views Checks enabled"         },
+            { key = "quota_requirement",      code = "SettingQuotaReq",             label = "Quota Requirement"            },
+            { key = "monster_tiers",          code = "SettingMonsterTiers",         label = "Monster Tiers (shows T2/T3)"  },
+            { key = "difficult_monsters",     code = "SettingDifficultMonsters",    label = "Difficult Monsters included"  },
+            { key = "multiplayer_mode",       code = "SettingMultiplayer",          label = "Multiplayer mode"             },
+            { key = "include_sponsorships",   code = "SettingIncludeSponsorships",  label = "Sponsorships included"        },
+            { key = "sponsor_filler",         code = "SettingSponsorFiller",        label = "Sponsor Filler only"          },
+            { key = "filler_multi_sightings", code = "SettingFillerMultiSightings", label = "Filler Multi-Sightings"       },
         }
+
         for _, s in ipairs(bool_settings) do
-            local val = slot_data[s.key]
-            if val ~= nil then
-                local item = Tracker:FindObjectForCode(s.code)
+            local raw = slot_data[s.key]
+            if raw ~= nil then
+                local bval  = toBool(raw)
+                local stage = bval and 1 or 0
+                local item  = Tracker:FindObjectForCode(s.code)
                 if item then
-                    -- Progressive settings: stage 0 = OFF, stage 1 = ON
-                    item.CurrentStage = (val == true or val == 1) and 1 or 0
+                    item.CurrentStage = stage
+                    print("AP: " .. s.label .. " = " .. tostring(bval) .. "  (raw=" .. tostring(raw) .. ")")
+                else
+                    print("AP: WARNING - could not find item for code '" .. s.code .. "' (key=" .. s.key .. ")")
                 end
+            else
+                print("AP: " .. s.label .. " not present in slot_data (key=" .. s.key .. ")")
             end
         end
 
-        local function setCount(code, value)
-            local item = Tracker:FindObjectForCode(code)
-            if item then item.AcquiredCount = tonumber(value) or 0 end
-        end
-        if slot_data["views_goal_target"]    ~= nil then setCount("GoalViewsTarget",  slot_data["views_goal_target"])    end
-        if slot_data["quota_count"]          ~= nil then setCount("GoalQuotaCount",   slot_data["quota_count"])          end
-        if slot_data["monster_hunter_count"] ~= nil then setCount("GoalMonsterCount", slot_data["monster_hunter_count"]) end
-        if slot_data["hat_collector_count"]  ~= nil then setCount("GoalHatCount",     slot_data["hat_collector_count"])  end
+        -- ----------------------------------------------------------------
+        -- NUMERIC GOAL TARGETS
+        -- These drive the consumable counter items that display "X / Max"
+        -- in the Goals & Settings tab.
+        -- ----------------------------------------------------------------
 
-        print("[CW Tracker] Slot data applied.")
-        print("  Viral Sensation: "      .. tostring(slot_data["viral_sensation"]))
-        print("  Views Goal Target: "    .. tostring(slot_data["views_goal_target"]))
-        print("  Quota Count: "          .. tostring(slot_data["quota_count"]))
-        print("  Monster Hunter Count: " .. tostring(slot_data["monster_hunter_count"]))
-        print("  Hat Collector Count: "  .. tostring(slot_data["hat_collector_count"]))
+        -- Views goal: how many total views the player must reach
+        local views_goal_target = toNum(slot_data["views_goal_target"])
+        print("AP: Parsed views_goal_target = " .. tostring(views_goal_target))
+        local vgt = Tracker:FindObjectForCode("GoalViewsTarget")
+        if vgt then vgt.AcquiredCount = views_goal_target end
+
+        -- Quota goal: how many quotas the player must meet
+        local quota_count = toNum(slot_data["quota_count"])
+        print("AP: Parsed quota_count = " .. tostring(quota_count))
+        local qc = Tracker:FindObjectForCode("GoalQuotaCount")
+        if qc then qc.AcquiredCount = quota_count end
+
+        -- Monster Hunter goal: how many unique monsters must be filmed
+        local monster_count = toNum(slot_data["monster_hunter_count"])
+        print("AP: Parsed monster_hunter_count = " .. tostring(monster_count))
+        local mc = Tracker:FindObjectForCode("GoalMonsterCount")
+        if mc then mc.AcquiredCount = monster_count end
+
+        -- Hat Collector goal: how many hats must be bought
+        local hat_count = toNum(slot_data["hat_collector_count"])
+        print("AP: Parsed hat_collector_count = " .. tostring(hat_count))
+        local hc = Tracker:FindObjectForCode("GoalHatCount")
+        if hc then hc.AcquiredCount = hat_count end
+
+        print("[CW Tracker] Slot data fully applied.")
+    else
+        print("[CW Tracker] No slot_data received (manual / offline session).")
     end
 end)
 

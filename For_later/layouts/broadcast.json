@@ -1,7 +1,26 @@
 {
+    "settings_popup": {
+        "type": "container",
+        "background": "#1a1a2e",
+        "content": {
+            "type": "dock",
+            "content": [
+                {
+                    "type": "group",
+                    "header": "World Options",
+                    "header_background": "#3e4b57",
+                    "content": {
+                        "type": "layout",
+                        "key": "cw_options_grid"
+                    }
+                }
+            ]
+        }
+    },
+
     "tracker_broadcast": {
         "type": "container",
-        "background": "#00000000",
+        "background": "#1a1a2e",
         "content": {
             "type": "array",
             "orientation": "vertical",

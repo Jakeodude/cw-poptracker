@@ -1,0 +1,22 @@
+[
+	{
+		"name": "LightFoot Village",
+		"access_rules": ["@ThornTail Hollow/Reach Area/, staff"],
+		"children": [
+			{
+				"name": "Entrance Booster Ledge Fuel Cells",
+				"sections": [
+					{"name": "1"},
+					{"name": "2"}
+				],
+				"map_locations": [
+					{
+						"map": "lightfoot",
+						"x": 166,
+						"y": 206
+					}
+				]
+			}
+		]
+	}
+]

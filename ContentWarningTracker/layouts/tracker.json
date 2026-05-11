@@ -1,167 +1,28 @@
 {
     "tracker_horizontal": {
-        "type": "container",
-        "background": "#00000000",
-        "content": {
-            "type": "tabbed",
-            "content": [
-                {
-                    "title": "Monsters",
-                    "content": {
-                        "type": "map",
-                        "maps": ["Monsters"]
-                    }
-                },
-                {
-                    "title": "Hats",
-                    "content": {
-                        "type": "container",
-                        "background": "#1a1a2e",
-                        "content": {
-                            "type": "array",
-                            "orientation": "vertical",
-                            "content": [
-                                {
-                                    "type": "group",
-                                    "header": "Hat Purchases (31)",
-                                    "header_background": "#7b2d8b",
-                                    "content": {
-                                        "type": "layout",
-                                        "key": "cw_hats_grid"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                },
-                {
-                    "title": "General",
-                    "content": {
-                        "type": "container",
-                        "background": "#1a1a2e",
-                        "content": {
-                            "type": "array",
-                            "orientation": "vertical",
-                            "content": [
-                                {
-                                    "type": "group",
-                                    "header": "Artifacts",
-                                    "header_background": "#2d5a27",
-                                    "content": {"type": "layout", "key": "cw_artifacts_grid"}
-                                },
-                                {
-                                    "type": "group",
-                                    "header": "Store Purchases",
-                                    "header_background": "#1a4a6b",
-                                    "content": {"type": "layout", "key": "cw_store_grid"}
-                                },
-                                {
-                                    "type": "group",
-                                    "header": "Emotes",
-                                    "header_background": "#4a3a1a",
-                                    "content": {"type": "layout", "key": "cw_emotes_grid"}
-                                },
-                                {
-                                    "type": "group",
-                                    "header": "Sponsorships",
-                                    "header_background": "#3a1a4a",
-                                    "content": {"type": "layout", "key": "cw_sponsorships_grid"}
-                                },
-                                {
-                                    "type": "group",
-                                    "header": "Found Chorby",
-                                    "header_background": "#4a2a1a",
-                                    "content": {"type": "layout", "key": "cw_chorby_grid"}
-                                }
-                            ]
-                        }
-                    }
-                },
-                {
-                    "title": "Days & Quotas",
-                    "content": {
-                        "type": "container",
-                        "background": "#1a1a2e",
-                        "content": {
-                            "type": "array",
-                            "orientation": "vertical",
-                            "content": [
-                                {
-                                    "type": "group",
-                                    "header": "Quotas (up to 21)",
-                                    "header_background": "#2d4a27",
-                                    "content": {"type": "layout", "key": "cw_quotas_grid"}
-                                },
-                                {
-                                    "type": "group",
-                                    "header": "Day Extractions (up to 63)",
-                                    "header_background": "#27344a",
-                                    "content": {"type": "layout", "key": "cw_days_grid"}
-                                }
-                            ]
-                        }
-                    }
-                },
-                {
-                    "title": "Views",
-                    "content": {
-                        "type": "container",
-                        "background": "#1a1a2e",
-                        "content": {
-                            "type": "group",
-                            "header": "View Milestones (up to 63 checks, Day 1-63)",
-                            "header_background": "#27344a",
-                            "content": {"type": "layout", "key": "cw_views_grid"}
-                        }
-                    }
-                },
-                {
-                    "title": "Goals & Settings",
-                    "content": {
-                        "type": "container",
-                        "background": "#1a1a2e",
-                        "content": {
-                            "type": "array",
-                            "orientation": "vertical",
-                            "content": [
-                                {
-                                    "type": "group",
-                                    "header": "Key Items",
-                                    "header_background": "#3e4b57",
-                                    "content": {"type": "layout", "key": "cw_key_items_grid"}
-                                },
-                                {
-                                    "type": "group",
-                                    "header": "Goals  [Toggle | Target | Progress]",
-                                    "header_background": "#5a3e1a",
-                                    "content": {"type": "layout", "key": "cw_goals_grid"}
-                                },
-                                {
-                                    "type": "group",
-                                    "header": "World Options (auto-set from slot data)",
-                                    "header_background": "#3e4b57",
-                                    "content": {"type": "layout", "key": "cw_options_grid"}
-                                },
-                                {
-                                    "type": "group",
-                                    "header": "Filler Received",
-                                    "header_background": "#2d3a27",
-                                    "content": {"type": "layout", "key": "cw_money_grid"}
-                                }
-                            ]
-                        }
-                    }
+        "type": "tabbed",
+        "background": "#1a1a2e",
+        "tabs": [
+            {
+                "title": "Monsters",
+                "content": {
+                    "type": "layout",
+                    "key": "monsters_map"
                 }
-            ]
-        }
+            }
+        ]
     },
-
     "tracker_vertical": {
-        "type": "container",
-        "background": "#00000000",
-        "content": {
-            "type": "layout",
-            "key": "tracker_horizontal"
-        }
+        "type": "tabbed",
+        "background": "#1a1a2e",
+        "tabs": [
+            {
+                "title": "Monsters",
+                "content": {
+                    "type": "layout",
+                    "key": "monsters_map"
+                }
+            }
+        ]
     }
 }

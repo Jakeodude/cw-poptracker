@@ -5,7 +5,7 @@
     "package_uid": "content_warning_ap",
     "author": "Jakeodude",
     "variants": {
-        "var_Standard": {
+        "standard": {
             "display_name": "Standard",
             "flags": ["ap"]
         }

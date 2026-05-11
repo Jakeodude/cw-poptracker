@@ -1,0 +1,245 @@
+[
+	{
+		"name": "Ice Mountain",
+		"access_rules": ["@ThornTail Hollow/Reach Area/, rock_candy"],
+		"children": [
+			{
+				"name": "Reach Area",
+				"sections": [{}]
+			},
+			{
+				"name": "Ice Mountain",
+				"sections": [
+					{"name": "Cheat Well Fuel Cell"}, // pick up explosive barrel
+					{"name": "Race Cave Fuel Cell Front"},
+					{"name": "Race Cave Fuel Cell Back"}
+				],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 4,
+						"y": 100
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "SnowHorn Wastes Water Spout",
+		"access_rules": ["@Ice Mountain/Reach Area/, tricky"],
+		"children": [
+			{
+				"name": "Reach Area",
+				"sections": [{}]
+			},
+			{
+				"name": "Magic Upgrade",
+				"sections": [{"access_rules": ["tricky"]}],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 233,
+						"y": 144
+					}
+				]
+			},
+			{
+				"name": "Feed Alpine Root",
+				"sections": [
+					{"name": "1", "access_rules": ["alpine_root_shw:1"]},
+					{"name": "2", "access_rules": ["alpine_root_shw:2"]}
+				],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 260,
+						"y": 149
+					}
+				]
+			},
+			{
+				"name": "Ice Block Fuel Cells", // requires alpine_root_shw:2 when SW isn't open
+				"sections": [
+					{"name": "Left"},
+					{"name": "Right"}
+				],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 214,
+						"y": 138
+					}
+				]
+			},
+			{
+				"name": "Dig Alpine Root near Campfire",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 218,
+						"y": 188
+					}
+				]
+			},
+			{
+				"name": "Dig Alpine Root near Fallen Tree",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 201,
+						"y": 154
+					}
+				]
+			},
+			{
+				"name": "Dig Egg near Water Spout",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 238,
+						"y": 187
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "SnowHorn Wastes Entrance",
+		"access_rules": ["@SnowHorn Wastes Water Spout/Reach Area/"], // requires alpine_root_shw:2 when SW isn't open
+		"children": [
+			{
+				"name": "Reach Area",
+				"sections": [{}]
+			},
+			{
+				"name": "Water Platform Fuel Cells",
+				"sections": [
+					{"name": "Left"},
+					{"name": "Right (Also Dig Cave Right)"}
+				],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 299,
+						"y": 124
+					}
+				]
+			},
+			{
+				"name": "Dig Cave near Entrance Fuel Cells",
+				"sections": [
+					{"name": "Left"},
+					{
+						"name": "Right (Also Water Platform Right)",
+						"ref": "SnowHorn Wastes Entrance/Water Platform Fuel Cells/Right (Also Dig Cave Right)" // vanilla links these on accident
+					}
+				],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 349,
+						"y": 136
+					}
+				]
+			},
+			{
+				"name": "Path to TTH Booster Fuel Cells",
+				"access_rules": ["$HasBlaster, rocket_boost"],
+				"sections": [
+					{"name": "Left"},
+					{"name": "Right"}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 224,
+						"y": 72
+					}
+				]
+			},
+			{
+				"name": "Dig BafomDad near Entrance",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 326,
+						"y": 184
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "SnowHorn Wastes Behind Gate",
+		"access_rules": ["@SnowHorn Wastes Entrance/Reach Area/, [gate_key]"], // shield hover
+		"children": [
+			{
+				"name": "Rescue GateKeeper",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 376,
+						"y": 139
+					}
+				]
+			},
+			{
+				"name": "Blast Tree past Gate Fuel Cells",
+				"access_rules": ["$HasBlaster"],
+				"sections": [
+					{"name": "Left"},
+					{"name": "Right"}
+				],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 364,
+						"y": 72
+					}
+				]
+			},
+			{
+				"name": "River past Gate Cheat Well Fuel Cell",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 455,
+						"y": 145
+					}
+				]
+			},
+			{
+				"name": "River Ledge past Gate Fuel Cells",
+				"sections": [
+					{"name": "Center"},
+					{"name": "Right (Use Blaster in Nearby Cave)", "access_rules": ["$HasBlaster"]},
+					{"name": "Left (Use Blaster in Nearby Cave)", "access_rules": ["$HasBlaster"]}
+				],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 426,
+						"y": 90
+					}
+				]
+			},
+			{
+				"name": "Dig in Cave past Gate",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "snowhorn",
+						"x": 410,
+						"y": 53
+					}
+				]
+			}
+		]
+	}
+]

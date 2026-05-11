@@ -1,7 +1,7 @@
 [
     {
         "name": "Monsters",
-        "location_size": 20,
+        "location_size": 32,
         "location_border_thickness": 2,
         "img": "images/maps/cw_monsters_map.png"
     }

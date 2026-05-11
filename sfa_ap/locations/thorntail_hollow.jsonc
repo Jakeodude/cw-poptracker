@@ -1,0 +1,443 @@
+[
+	{
+		"name": "ThornTail Hollow",
+		"access_rules": ["@Fly to ThornTail Hollow/"],
+		"children": [
+			{
+				"name": "Reach Area",
+				"sections": [{}]
+			},
+			{
+				"name": "Fire Blaster Upgrade",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 229,
+						"y": 173
+					}
+				]
+			},
+			{
+				"name": "ThornTail Store",
+				"visibility_rules": ["shop_enabled"],
+				"sections": [
+					{"name": "Rock Candy", "access_rules": ["^$CanBuy|10"]},
+					{"name": "Hi-Tech Display Device", "access_rules": ["^$CanBuy|20"]},
+					{"name": "Tricky Ball", "access_rules": ["^$CanBuy|15"]},
+					{"name": "BafomDad Holder", "access_rules": ["^$CanBuy|20"]},
+					{"name": "FireFly Lantern", "access_rules": ["^$CanBuy|20"]},
+					{"name": "SnowHorn Artifact", "access_rules": ["^$CanBuy|130"]},
+					{
+						"name": "Map Cape Claw",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map Ocean Force Point",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|10"]
+					},
+					{
+						"name": "Map Krazoa Palace",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map Dragon Rock",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map ThornTail Hollow",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map Moon Pass",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map LightFoot Village",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map DarkIce Mines",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map CloudRunner Fortress",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map Walled City",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map SnowHorn Wastes",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|5"]
+					},
+					{
+						"name": "Map Volcano Force Point",
+						"visibility_rules": ["shop_maps"],
+						"access_rules": ["^$CanBuy|10"]
+					}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 159,
+						"y": 274
+					}
+				]
+			},
+			{
+				"name": "Queen Cave Fuel Cell",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 280,
+						"y": 401
+					}
+				]
+			},
+			{
+				"name": "Pillar Fuel Cells",
+				"sections": [
+					{"name": "Left"},
+					{"name": "Right"}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 168,
+						"y": 369
+					}
+				]
+			},
+			{
+				"name": "Beside WarpStone Fuel Cells",
+				"access_rules": ["$CanExplodeBombPlant"],
+				"sections": [
+					{"name": "Left"},
+					{"name": "Right"}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 144,
+						"y": 256
+					}
+				]
+			},
+			{
+				"name": "Waterfall Cave Fuel Cells",
+				"access_rules": ["$CanExplodeBombPlant"],
+				"sections": [
+					{"name": "Center"},
+					{"name": "Left"},
+					{"name": "Right"},
+					{"name": "Back"}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 114,
+						"y": 276
+					}
+				]
+			},
+			{
+				"name": "South Cave Fuel Cells",
+				"access_rules": ["$CanExplodeBombPlant"],
+				"sections": [
+					{"name": "Center"},
+					{"name": "Right"},
+					{"name": "Left"}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 172,
+						"y": 399
+					}
+				]
+			},
+			{
+				"name": "Above Store Fuel Cells",
+				"access_rules": ["$HasBooster"],
+				"sections": [
+					{"name": "Left"},
+					{"name": "Right"}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 183,
+						"y": 229
+					}
+				]
+			},
+			{
+				"name": "Magic Upgrade above Store",
+				"sections": [{"access_rules": ["$HasBooster, $CanExplodeBombPlant"]}],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 157,
+						"y": 235
+					}
+				]
+			},
+			{
+				"name": "Feed Queen White GrubTubs",
+				"sections": [{"access_rules": ["@ThornTail Hollow/Queen Cave Fuel Cell/, grubtub:6"]}],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 279,
+						"y": 340
+					}
+				]
+			},
+			{
+				"name": "Dig near Store",
+				"sections": [{"access_rules": ["tricky"]}],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 176,
+						"y": 296
+					}
+				]
+			},
+			{
+				"name": "Dig near Queen Cave",
+				"sections": [{"access_rules": ["tricky"]}],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 237,
+						"y": 364
+					}
+				]
+			},
+			{
+				"name": "LightFoot Village Entrance",
+				"access_rules": ["@ThornTail Hollow/Reach Area/, staff"],
+				"sections": [{}]
+			},
+			{
+				"name": "Entrance to LightFoot Village Fuel Cells",
+				"access_rules": ["@ThornTail Hollow/LightFoot Village Entrance/"],
+				"sections": [
+					{"name": "Right"},
+					{"name": "Left"}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 37,
+						"y": 388
+					}
+				]
+			},
+			{
+				"name": "Dig in Entrance to LightFoot Village",
+				"sections": [{"access_rules": ["@ThornTail Hollow/LightFoot Village Entrance/, tricky"]}],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 22,
+						"y": 379
+					}
+				]
+			},
+			// {
+			// 	"name": "Light the Torches",
+			// 	"sections": [{"access_rules": ["flame"]}], // fire weed? spellstone?
+			// 	"map_locations": [
+			// 		{
+			// 			"map": "thorntail",
+			// 			"x": 151,
+			// 			"y": 355
+			// 		},
+			// 		{
+			// 			"map": "thorntail",
+			// 			"x": 237,
+			// 			"y": 292,
+			// 			"shape": "diamond"
+			// 		},
+			// 		{
+			// 			"map": "thorntail",
+			// 			"x": 132,
+			// 			"y": 219,
+			// 			"shape": "diamond"
+			// 		},
+			// 		{
+			// 			"map": "thorntail",
+			// 			"x": 17,
+			// 			"y": 392,
+			// 			"shape": "diamond"
+			// 		}
+			// 	]
+			// },
+			{
+				"name": "Ancient Well",
+				"sections": [
+					{
+						"name": "Staff Booster Upgrade",
+						"ref": "Ancient Well/Staff Booster Upgrade/"
+					},
+					{
+						"name": "Fuel Cell Left",
+						"ref": "Ancient Well/Fuel Cells/Left"
+					},
+					{
+						"name": "Fuel Cell Right",
+						"ref": "Ancient Well/Fuel Cells/Right"
+					},
+					{
+						"name": "White GrubTub 1",
+						"ref": "Dark Ancient Well/White GrubTub 1/"
+					},
+					{
+						"name": "White GrubTub 2",
+						"ref": "Dark Ancient Well/White GrubTub 2/"
+					},
+					{
+						"name": "White GrubTub 3",
+						"ref": "Dark Ancient Well/White GrubTub 3/"
+					},
+					{
+						"name": "White GrubTub 4",
+						"ref": "Dark Ancient Well/White GrubTub 4/"
+					},
+					{
+						"name": "White GrubTub 5",
+						"ref": "Dark Ancient Well/White GrubTubs/5"
+					},
+					{
+						"name": "White GrubTub 6",
+						"ref": "Dark Ancient Well/White GrubTubs/6"
+					}
+				],
+				"map_locations": [
+					{
+						"map": "thorntail",
+						"x": 221,
+						"y": 233
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Ancient Well",
+		"access_rules": ["@ThornTail Hollow/Reach Area/, tricky"],
+		"children": [
+			{
+				"name": "Reach Area",
+				"sections": [{}]
+			},
+			{
+				"name": "Staff Booster Upgrade",
+				"sections": [{"access_rules": ["$CanExplodeBombPlant"]}],
+				"map_locations": [
+					{
+						"map": "ancient_well",
+						"x": 105,
+						"y": 113
+					}
+				]
+			},
+			{
+				"name": "Fuel Cells",
+				"access_rules": ["$HasBooster"],
+				"sections": [
+					{"name": "Left"},
+					{"name": "Right"}
+				],
+				"map_locations": [
+					{
+						"map": "ancient_well",
+						"x": 9,
+						"y": 141
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Dark Ancient Well",
+		"access_rules": ["@Ancient Well/Reach Area/, $HasBooster, lantern, $CanExplodeBombPlant"],
+		"children": [
+			{
+				"name": "White GrubTub 1",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "ancient_well",
+						"x": 19,
+						"y": 33
+					}
+				]
+			},
+			{
+				"name": "White GrubTub 2",
+				"sections": [{}],
+				"map_locations": [
+					{
+						"map": "ancient_well",
+						"x": 116,
+						"y": 11
+					}
+				]
+			},
+			{
+				"name": "White GrubTub 3",
+				"sections": [{"access_rules": ["$CanExplodeBombPlant"]}],
+				"map_locations": [
+					{
+						"map": "ancient_well",
+						"x": 12,
+						"y": 114
+					}
+				]
+			},
+			{
+				"name": "White GrubTub 4",
+				"sections": [{"access_rules": ["$HasBooster"]}],
+				"map_locations": [
+					{
+						"map": "ancient_well",
+						"x": 73,
+						"y": 36
+					}
+				]
+			},
+			{
+				"name": "White GrubTubs",
+				"access_rules": ["@Dark Ancient Well/Dark Well Shroom 3/, @Dark Ancient Well/Dark Well Shroom 4/"],
+				"sections": [
+					{"name": "5"},
+					{"name": "6"}
+				],
+				"map_locations": [
+					{
+						"map": "ancient_well",
+						"x": 135,
+						"y": 122
+					}
+				]
+			}
+		]
+	}
+]

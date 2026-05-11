@@ -1,0 +1,6 @@
+{
+    "monsters_map": {
+        "type": "map",
+        "maps": ["Monsters"]
+    }
+}

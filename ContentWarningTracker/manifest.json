@@ -5,32 +5,9 @@
     "package_uid": "content_warning_ap",
     "author": "Jakeodude",
     "variants": {
-        "Standard": {
+        "var_Standard": {
             "display_name": "Standard",
-            "flags": ["ap"],
-            "items": [
-                "items/items.json",
-                "items/settings.json",
-                "items/locationobjects.json"
-            ],
-            "locations": [
-                "locations/monsters.json",
-                "locations/hats.json",
-                "locations/general.json",
-                "locations/days_quotas.json",
-                "locations/views.json"
-            ],
-            "maps": [
-                "maps/maps.json"
-            ],
-            "layouts": [
-                "layouts/items.json",
-                "layouts/tracker.json",
-                "layouts/broadcast.json"
-            ],
-            "scripts": [
-                "scripts/init.lua"
-            ]
+            "flags": ["ap"]
         }
     },
     "min_poptracker_version": "0.32.1"
